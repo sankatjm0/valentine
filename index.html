@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>oxa dundun</title>
+        <style>
+            button {
+                border-style: none;
+                font-size: large;
+                padding: 5px;
+            }
+
+            #im {
+                height: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="text-align: center;">
+        <h1 style="text-align: center; position: relative; margin-top: 50px;">WILL YOU BE MY VALENTINE?</h1>
+        <img id="im" src="5e43297003e041ddf55ac290fe1a8089.jpg">
+        </div>
+        <div id="ans" style="position: relative; margin-top: 50px; text-align: center;">
+        <button id="acp" style="width: 100px; height: 100px; background-color: pink;">YES <3</button>
+        <button id="rej" style="width: 100px; height: 100px; background-color: red;">NO</button>
+        </div>
+        <script>
+            let max = 5
+            let img = document.getElementById("im")
+            let rej = document.getElementById("rej")
+            let acp = document.getElementById("acp")
+            rej.onclick = () => {
+                max--
+                if (max == 4) {
+                    img.src = "3b7b221a-7c08-4ec7-8a7d-2bd4f4ceb9c4.jpg"
+                    rej.style.width = '90px'
+                rej.style.height = "90px"
+                acp.style.width = '120px'
+                acp.style.height = '120px'
+                    rej.innerText = "chắc chưa?";
+                } else if (max == 3) {
+                    img.src = "Bunny-GIF-22.gif"
+                    rej.style.width = '80px'
+                rej.style.height = "80px"
+                acp.style.width = '140px'
+                acp.style.height = '140px'
+                    rej.innerText = "anh khum iu em ư";
+                } else if (max == 2) {
+                    img.src = "49a3267b-f2dd-4468-9f4e-673e3af75729.jpg"
+                    rej.style.width = '70px'
+                rej.style.height = '70px'
+                acp.style.width = '160px'
+                acp.style.height = '160px'
+                    rej.innerText = ":)";
+                } else if (max == 1) {
+                    img.src = 'giphy.gif'
+                    rej.style.width = '60px'
+                rej.style.height = "60px"
+                acp.style.width = '180px'
+                acp.style.height = '180px'
+                    rej.innerText = "riel?";
+                } else if (max == 0) {
+                    img.src = 'maxresdefault.jpg'
+                    rej.style.width = '50px'
+                rej.style.height = "50px"
+                acp.style.width = '200px'
+                acp.style.height = '200px'
+                    rej.innerText = "fine";
+                } else {
+                    img.src = 'ee7d0514-6833-4b71-b84d-64194a1fed5b.jpg'
+                    rej.style.display = 'none'
+                acp.style.width = '80%'
+                acp.style.height = '80%'
+                }
+            }
+            
+            acp.onclick = () => {
+                document.body.innerHTML = `<div style="text-align: center;">
+        <h1 style="text-align: center; color: pink; position: relative; margin-top: 100px;">EM BIT ANH IU EM MAH, LOVE YOU BAE <3</h1>
+        <img id="im" src="c93449fe-8d19-4c07-8001-e355be50bff6.jpg">
+        </div>
+`
+            }
+        </script>
+    </body>
+</html>
